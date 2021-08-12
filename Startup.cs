@@ -47,12 +47,12 @@ namespace ApiPractice
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
-            //app.Use(async (context, next) =>
-            //{
-            //    await context.Response.WriteAsync("Before Invoke from 1st\n");
-            //    await next();
-            //    await context.Response.WriteAsync("After Invoke from 1st-2\n");
-            //});
+            app.Use(async (context, next) =>
+            {
+                await context.Response.WriteAsync("Before Invoke from 1st\n");
+                await next();
+                await context.Response.WriteAsync("After Invoke from 1st-2\n");
+            });
 
 
             //app.Run(async (context) =>
@@ -66,7 +66,8 @@ namespace ApiPractice
             //    await context.Response.WriteAsync("Hello from 2nd run\n");
             //});
 
-            //app.Map("/api/users", appMap => {
+            //app.Map("/api/users", appMap =>
+            //{
             //    appMap.Run(async context =>
             //    {
             //        await context.Response.WriteAsync("Hello from 2nd app.Map()");
@@ -77,6 +78,10 @@ namespace ApiPractice
 
             //});
 
+            //app.Run(async (context) =>
+            //{
+            //    await context.Response.WriteAsync("Hello from 1st run\n");
+            //});
 
             if (env.IsDevelopment())
             {
@@ -96,8 +101,7 @@ namespace ApiPractice
             });
 
 
-            
-
+           
         }
     }
 }
