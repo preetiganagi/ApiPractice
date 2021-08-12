@@ -1,0 +1,26 @@
+﻿<Properties StartupConfiguration="{2880B0EA-F009-4EC3-BCCF-D6CD18F17FFE}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="MiddlewareTest.cs">
+    <Files>
+      <File FileName="Startup.cs" Line="96" Column="35" />
+      <File FileName="MiddlewareTest.cs" Line="34" Column="53" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="ApiPractice" expanded="True">
+            <Node name="ApiPractice" expanded="True">
+              <Node name="MiddlewareTest.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.ApiPractice PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
